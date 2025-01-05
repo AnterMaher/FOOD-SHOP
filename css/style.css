@@ -1,0 +1,200 @@
+*{
+    /* body */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font */
+    font-family: "Fjalla One", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+body{
+    /* body */
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    }
+html{
+    /* body */
+    font-size: 100%;
+    scroll-behavior: smooth;
+    }
+/* animista */
+.tracking-in-expand-fwd-bottom {
+	-webkit-animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes tracking-in-expand-fwd-bottom {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(500px);
+              transform: translateZ(-700px) translateY(500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+}
+@keyframes tracking-in-expand-fwd-bottom {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(500px);
+              transform: translateZ(-700px) translateY(500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+}
+/* animista */
+nav{
+    background-image:url(../back-ground-img.png) ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-color: black;
+    color: white;
+}
+nav .a {
+    color: rgb(0, 0, 0);
+    width: 100px;
+    text-align: center;
+    padding: 5px 20px;
+    margin: 0 5px;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+.color{
+    color: #ff4500;
+    background-color: white;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 5px 35px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+#Home{
+    color: white;
+    font-weight: bold;
+background-image:url(../back-ground-img.png);
+background-size: cover;
+background-attachment: fixed;
+height: 98vh;
+width: 100%;
+}
+#Home img{
+    width: 550px;
+    height: 100%;
+}
+#Home p ,#About p{
+max-width: 600px;
+}
+nav {
+    background-image: url(../back-ground-img.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+}
+#Home {
+    color: white;
+    font-weight: bold;
+    background-image: url(../back-ground-img.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 98vh;
+    width: 100%;
+}
+#Home img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+#Home p, #About p {
+    max-width: 600px;
+    min-width: 200px;
+}
+#About img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+#Gallery{
+    color: white;
+    background-color: black !important;
+    background-attachment: fixed;
+
+    width: 100%;
+}
+/* card */
+#Menu .card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+#Menu .card img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+}
+background-image{
+    background-image:url(../back-ground-img.png);
+}
+#Contact .card {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #Home, #About {
+        text-align: center;
+    }
+
+    #Home img, #About img {
+        width: 100%;
+        height: auto;
+    }
+
+    #Home p, #About p {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    #Menu .card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        text-align: center;
+    }
+
+    #Home, #About {
+        padding: 20px;
+    }
+
+    #Home p, #About p {
+        padding: 0 10px;
+    }
+}
